@@ -8,30 +8,26 @@
 </head>
 <body>
 
-  <div class="wrapper">
-    <div class="header clearfix">
-      <a href="#" class="logo"></a>
-      <ul class="main_navigation">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li>
-          <a href="#">Portfolio</a>
-          <ul class="sub_main_navigation">
-            <li><a href="#">HTML/CSS</a></li>
-            <li><a href="#">jQuery</a></li>
-            <li><a href="#">Node.js</a></li>
-            <li><a href="#">Rails</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a>
-          <ul class="sub_main_navigation">
-            <li><a href="#">Email</a></li>
-            <li><a href="/contact">Contact Form</a></li>
-          </ul>
-        </li>
-      </ul>
+<nav class="navbar navbar-default navbar-fixed-top" id="header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="assets/AmpelHealth_Logo_Header.jpeg">
+      </a>
     </div>
+    <ul class="header-ul">
+        <li><a>Features</a></li>
+        <li><a>Pricing</a></li>
+        <li><a>Schedule Demo</a></li>
+        <li><a>Customer</a></li>
+        <li><a>Testimonial</a></li>
+    </ul>
+    <ul class="header-ul header-signup">
+        <li><a id="start-trial">Start a free trial</a></li>
+        <li><a id="sign-up">Sign up</a></li>
+    </ul>
+  </div>
+</nav>
 
 <%= yield %>
 

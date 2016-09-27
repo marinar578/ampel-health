@@ -14,3 +14,57 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+nav#header {
+    background-color: white;
+    border: none;
+    position: relative;
+}
+
+a.navbar-brand{
+    height: 90px;
+}
+
+ul.header-ul{
+    list-style-type: none;
+    padding-top: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 20%;
+}
+
+ul.header-ul li{
+    display: inline;
+    padding-right: 40px;
+}
+
+ul.header-ul li a{
+    color: #c2c2c6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul.header-ul li a:hover{
+    color: grey;
+}
+
+ul.header-signup {
+    position: absolute;
+    right: 0px;
+}
+
+ul.header-signup li {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#start-trial {
+    color: orange;
+}
+
+#sign-up{
+    color: grey;
+}
+
+
