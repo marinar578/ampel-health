@@ -14,14 +14,19 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "home.scss";
 
 
 .jumbotron{
     position: relative;
     height: 700px;
+    width: 100%;
+    background-color: white;
+}
+
+.jumbotron-header{
     background: url('/assets/light-man-hand-pen') no-repeat ;
     background-size: 100%;
-    width: 100%;
 }
 
 nav#header {

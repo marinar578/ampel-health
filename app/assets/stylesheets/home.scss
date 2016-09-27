@@ -1,3 +1,38 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron-infographs p{
+    text-align: center;
+    color: darkgreen;
+}
+
+.jumbotron-infographs .infographs{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+}
+
+.infograph{
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    width:30%;
+}
+
+// .infograph img{
+//     position: relative;
+// }
+
+.infograph p{
+    color: #638181;
+    // position: relative;
+    // bottom: 0px;
+}
+
+.infograph-1{
+    display: inline-block;
+    width: 30%;
+}
