@@ -8,26 +8,33 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top" id="header">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="assets/AmpelHealth_Logo_Header.jpeg">
-      </a>
+<div class="jumbotron">
+    <nav class="navbar navbar-default navbar-fixed-top" id="header">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="assets/AmpelHealth_Logo_Header.jpeg">
+          </a>
+        </div>
+        <ul class="header-ul">
+            <li><a>Features</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>Schedule Demo</a></li>
+            <li><a>Customer</a></li>
+            <li><a>Testimonial</a></li>
+        </ul>
+        <ul class="header-ul header-signup">
+            <li><a id="start-trial">Start a free trial</a></li>
+            <li><a id="sign-up">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="info-container">
+        <p>Ampel Health provides easy to integrate health experience surveys through a customizable platform with real-time insights that make sense to healthcare systems.</p>
+        <div class="btn btn-primary">start a free trial</div>
     </div>
-    <ul class="header-ul">
-        <li><a>Features</a></li>
-        <li><a>Pricing</a></li>
-        <li><a>Schedule Demo</a></li>
-        <li><a>Customer</a></li>
-        <li><a>Testimonial</a></li>
-    </ul>
-    <ul class="header-ul header-signup">
-        <li><a id="start-trial">Start a free trial</a></li>
-        <li><a id="sign-up">Sign up</a></li>
-    </ul>
-  </div>
-</nav>
+</div>
 
 <%= yield %>
 

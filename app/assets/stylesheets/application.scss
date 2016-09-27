@@ -16,14 +16,24 @@
 @import "bootstrap";
 
 
+.jumbotron{
+    position: relative;
+    height: 700px;
+    background: url('/assets/light-man-hand-pen') no-repeat ;
+    background-size: 100%;
+    width: 100%;
+}
+
 nav#header {
     background-color: white;
     border: none;
-    position: relative;
+    position: absolute;
+    top: 0px;
 }
 
 a.navbar-brand{
     height: 90px;
+    overflow: hidden;
 }
 
 ul.header-ul{
@@ -67,4 +77,33 @@ ul.header-signup li {
     color: grey;
 }
 
+.jumbotron .info-container{
+    position: absolute;
+    top: 48%;
+    right: 5px;
+    width: 28%;
+}
+
+.jumbotron .info-container p{
+    color: #547878;
+    position: relative;
+    right: 0px;
+}
+
+.jumbotron .info-container .btn-primary {
+    // position: relative;
+    // bottom: 0px;
+    // right: 0px;
+    // height: 60px;
+    // width: 150px;
+    font-size: 18px;
+    // color: white;
+    background-color: #fc6f28;
+    margin-top: 20px;
+    // text-align: center;
+    border: none;
+    border-radius: 0px;
+    padding: 10px 24px;
+
+}
 
