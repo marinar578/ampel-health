@@ -2,37 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.jumbotron-infographs p{
-    text-align: center;
-    color: darkgreen;
+.jumbotron.jumbotron-infographs {
+    height: 510px;
 }
 
-.jumbotron-infographs .infographs{
-    width: 80%;
-    height: 500px;
-    margin: 0 auto;
-    padding: 0;
+.jumbotron-infographs p{
+    text-align: center;
+    color: #638181;
+}
+
+.infograph-wrapper{
+    margin: 30px auto 0 auto;
     position: absolute;
 }
 
 .infograph{
-    position: relative;
-    top: 0px;
     display: inline-block;
-    width:30%;
+    width: 33%;
 }
 
-// .infograph img{
-//     position: relative;
-// }
+.infograph img{
+    overflow: hidden;
+    height: 251px;
+    margin: 0 12%;
+}
+
+.info-1 {
+    padding-left: 3%;
+}
 
 .infograph p{
     color: #638181;
-    // position: relative;
-    // bottom: 0px;
+    text-align: center;
+    font-size: 17px;
+    width: 83%;
+    margin: 0 auto;
 }
 
-.infograph-1{
-    display: inline-block;
-    width: 30%;
+
+
+
+.jumbotron-slogan{
+    background: url('/assets/pier.png') no-repeat fixed;
+    background-size: 100%;
+    opacity: .6;
+    height: 510px;
+}
+
+.jumbotron-slogan h2{
+    text-align: center;
+    opacity: 1;
+    font-size: 28pt;
+    font-weight: 200;
 }
