@@ -95,14 +95,15 @@
     left: 27%;
 }
 
-.jumbotron-mobile-images{
+.jumbotron.jumbotron-mobile-images{
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 0;
-    width: 90%;
-    margin-left: 3%;
+    padding-bottom: 0;
+    height: 650px;
 }
 
-.jumbotron-mobile-images .col-md-3{
+.jumbotron-mobile-images .col-md-4{
     height: 500px;
 }
 
@@ -111,10 +112,19 @@
     top: 50%;
 }
 
+#mobile1{
+    left: 50%;
+}
+
 #physician-insights{
     background: url('/assets/physicianinsight') no-repeat;
     background-size: 100%;
     height: 100%;
+}
+
+#signup {
+    position: absolute;
+    left: 40%;
 }
 
 #arrow-2{
