@@ -61,7 +61,8 @@ ul.header-ul li a{
 }
 
 ul.header-ul li a:hover{
-    color: grey;
+    // color: grey;
+    color: #C8C9CC;
 }
 
 ul.header-signup {
@@ -75,11 +76,13 @@ ul.header-signup li {
 }
 
 #start-trial {
-    color: orange;
+    // color: orange;
+    color: #F17D11;
 }
 
 #sign-up{
-    color: grey;
+    // color: grey;
+    color: #4F7172;
 }
 
 .jumbotron .info-container{
@@ -90,14 +93,16 @@ ul.header-signup li {
 }
 
 .jumbotron .info-container p{
-    color: #547878;
+    // color: #547878;
+    color: #6F8C89;
     position: relative;
     right: 0px;
 }
 
  .btn-primary {
     font-size: 18px;
-    background-color: #fc6f28;
+    // background-color: #fc6f28;
+    background-color: #F47900;
     margin-top: 20px;
     border: none;
     border-radius: 0px;
