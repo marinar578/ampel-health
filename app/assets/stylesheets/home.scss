@@ -43,15 +43,54 @@
 
 
 .jumbotron-slogan{
-    background: url('/assets/pier.png') no-repeat fixed;
-    background-size: 100%;
-    opacity: .6;
     height: 510px;
+    position: relative;
+    // overflow: hidden;
+}
+
+.jumbotron-slogan img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
 }
 
 .jumbotron-slogan h2{
     text-align: center;
     opacity: 1;
-    font-size: 28pt;
-    font-weight: 200;
+    font-size: 30pt;
+    font-weight: 300;
+    padding: 200px;
+    position: relative;
+    z-index: 2;
+    top: -30%;
+}
+
+
+.jumbotron-slogan .info-box {
+    display: inline-block;
+    width: 48%;
+    height: 90%;
+    background-color: rgba(73, 112, 111, 0.6);
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    bottom: -25%;
+    left: 25%;
+}
+
+.info-box p{
+    text-align: center;
+    font-size: 21pt;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+}
+
+.jumbotron-mobile-images{
+    padding-top: 20%;
 }
