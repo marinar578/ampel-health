@@ -1,3 +1,5 @@
-jumbotron image:
+first jumbotron image (tablet):
 https://www.pexels.com/photo/hand-using-stylus-pen-for-touching-the-digital-tablet-screen-6336/
 
+second jumbotron image (pier):
+https://www.pexels.com/photo/brown-wooden-footbridge-on-body-of-water-during-sunrise-129441/
