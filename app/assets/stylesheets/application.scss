@@ -20,6 +20,7 @@
 body{
     max-width: 1265px;
     margin: 0 auto;
+    min-width: 822px;
 }
 
 .jumbotron{
@@ -198,6 +199,7 @@ ul.header-signup li {
         position: relative;
         bottom: 25%;
         text-align: left;
+        font-size: 30px;
     }
 
     .jumbotron.jumbotron-slogan{
@@ -210,7 +212,76 @@ ul.header-signup li {
 
     .info-box p {
         top: 4%;
+        font-size: 19pt;
     }
 
+    .jumbotron-slogan .info-box{
+        background: none;
+    }
+
+    .jumbotron-slogan .info-box p{
+        font-size: 17pt;
+        width: 100%;
+        left: 0;
+        background-color: rgba(73, 112, 111, 0.6);
+        padding: 50px;
+    }
+
+    #mobile1{
+        display: none;
+    }
+
+    #mobile2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:825px) {
+    .jumbotron-slogan h2 {
+        font-size: 30px;
+    }
+
+    .jumbotron-slogan .info-box{
+        background: none;
+    }
+
+    .jumbotron-slogan .info-box p{
+        font-size: 17pt;
+        width: 100%;
+        left: 0;
+        background-color: rgba(73, 112, 111, 0.6);
+        padding: 50px;
+    }
+
+    .infograph p {
+        font-size: 25px;
+    }
+
+    #start-free-trial{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+    #physician-insights{
+        width: 500px;
+        position: relative;
+        top: -30%;
+        height: 570px;
+    }
+
+    .jumbotron-mobile-images .col-md-4 {
+        height: 250px;
+    }
+
+    .jumbotron-mobile-images .btn {
+        margin-top: 0;
+    }
+
+    .col-sm-3{
+        display: none;
+    }
 
 }
