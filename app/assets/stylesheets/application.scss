@@ -49,7 +49,6 @@ a.navbar-brand{
 .menu{
     position: relative;
     right: 25%;
-    // top: 3%;
     float: right;
     display: none;
     margin-top: 5%;
@@ -107,7 +106,6 @@ ul.header-ul li a{
 }
 
 ul.header-ul li a:hover{
-    // color: grey;
     color: #C8C9CC;
 }
 
@@ -122,12 +120,10 @@ ul.header-signup li {
 }
 
 #start-trial {
-    // color: orange;
     color: #F17D11;
 }
 
 #sign-up{
-    // color: grey;
     color: #4F7172;
 }
 
@@ -139,7 +135,6 @@ ul.header-signup li {
 }
 
 .jumbotron .info-container p{
-    // color: #547878;
     color: #6F8C89;
     position: relative;
     right: 0px;
@@ -147,16 +142,12 @@ ul.header-signup li {
 
  .btn-primary {
     font-size: 18px;
-    // background-color: #fc6f28;
     background-color: #F47900;
     margin-top: 20px;
     border: none;
     border-radius: 0px;
     padding: 10px 24px;
-
 }
-
-
 
 .footer{
     position: relative;
@@ -180,14 +171,46 @@ ul.header-signup li {
 
 
 @media screen and (max-width:1000px) {
-  .menu{
-    display: inline;
-    position: absolute;
-    top: 5px;
-  }
+    .menu{
+        display: inline;
+        position: absolute;
+        top: 5px;
+    }
 
-  ul.header-ul{
-    display: none;
-  }
+    .jumbotron.jumbotron-infographs {
+        height: 1000px;
+        padding: 0;
+    }
+
+    .infograph-wrapper{
+        height:500px;
+    }
+
+    .infograph{
+        width: 100%;
+        height: 275px;
+    }
+
+    .infograph p{
+        display: inline;
+        float: right;
+        width: 50%;
+        position: relative;
+        bottom: 25%;
+        text-align: left;
+    }
+
+    .jumbotron.jumbotron-slogan{
+        height: 645px;
+    }
+
+    .infograph img{
+        float: left;
+    }
+
+    .info-box p {
+        top: 4%;
+    }
+
 
 }
