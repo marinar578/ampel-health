@@ -19,6 +19,7 @@
 
 body{
     max-width: 1265px;
+    margin: 0 auto;
 }
 
 .jumbotron{
@@ -43,6 +44,47 @@ nav#header {
 a.navbar-brand{
     height: 90px;
     overflow: hidden;
+}
+
+.menu{
+    position: relative;
+    right: 25%;
+    // top: 3%;
+    float: right;
+    display: none;
+    margin-top: 5%;
+}
+
+#nav-menu{
+    cursor: pointer;
+}
+
+ul.menu-header-ul{
+    list-style-type: none;
+    width: 175px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+ul.menu-header-ul li{
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+ul.menu-header-ul li a{
+    display: block;
+    position: relative;
+    left: 0;
+    padding-left: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.hover {
+  background: #c2c2c6;
+
 }
 
 ul.header-ul{
@@ -122,4 +164,30 @@ ul.header-signup li {
     padding: 30px;
     background-color: #E6E7E7;
     color: grey;
+}
+
+
+@media screen and (max-width:1150px) {
+  .menu{
+    display: block;
+  }
+
+  ul.header-ul{
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width:1000px) {
+  .menu{
+    display: inline;
+    position: absolute;
+    top: 5px;
+  }
+
+  ul.header-ul{
+    display: none;
+  }
+
 }

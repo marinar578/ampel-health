@@ -1,3 +1,10 @@
+<div class="jumbotron jumbotron-header">
+    <div class="info-container">
+        <p>Ampel Health provides easy to integrate health experience surveys through a customizable platform with real-time insights that make sense to healthcare systems.</p>
+        <div class="btn btn-primary"  data-toggle="modal" data-target="#signupModal">start a free trial</div>
+    </div>
+</div>
+
 <div class="jumbotron jumbotron-infographs row">
     <p>capture the patient experience with ease</p>
     <div class="infograph-wrapper row">
@@ -35,7 +42,7 @@
     <div class="col-md-4">
         <div id="physician-insights">
         </div>
-        <div class="btn btn-primary" id="signup">sign up</div>
+        <div class="btn btn-primary" id="signup" data-toggle="modal" data-target="#signupModal">sign up</div>
     </div>
     <div class="col-md-4">
         <div class="mobile-wrapper" id="mobile2">
@@ -43,4 +50,54 @@
             <p>Customize surveys</p>
         </div>
     </div>
+</div>
+
+
+<!-- sign up modal -->
+<div id="signupModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Sign up for more info</h4>
+        </div>
+        <div class="modal-body">
+            <p>Please submit your email below for more information about our services.</p>
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label  class="col-sm-2 control-label"
+                          for="inputName">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" 
+                    id="inputName" placeholder="Name"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label"
+                      for="inputEmail" >Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control"
+                        id="inputEmail" placeholder="Email"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label"
+                      for="inputMessage" >Message</label>
+                <div class="col-sm-10">
+                    <input type="textarea" class="form-control"
+                        id="inputMessage" placeholder="Message"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+
+  </div>
 </div>

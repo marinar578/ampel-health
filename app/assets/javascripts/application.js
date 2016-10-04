@@ -15,3 +15,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+console.log("loaded");
+$(document).ready(function(){
+    $('#nav-menu').click(function(){
+    $('.menu-header-ul').toggle();
+    })
+
+    var menu_items = $('.menu-header-ul li');
+    menu_items.hover(function(){
+    $(this).children('a').addClass("hover");
+    $(this).children('ul').show();
+    }, function(){
+    $(this).children('a').removeClass("hover");
+    $(this).children('ul').hide();
+    });
+
+
+})

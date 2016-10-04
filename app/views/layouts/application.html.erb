@@ -8,33 +8,40 @@
 </head>
 <body>
 
-<div class="jumbotron jumbotron-header">
-    <nav class="navbar navbar-default navbar-fixed-top" id="header">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="assets/AmpelHealth_Logo_Header.jpeg">
-          </a>
-        </div>
-        <ul class="header-ul">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Schedule Demo</a></li>
-            <li><a href="#">Customer</a></li>
-            <li><a href="#">Testimonial</a></li>
-        </ul>
-        <ul class="header-ul header-signup">
-            <li><a href="#" id="start-trial">Start a free trial</a></li>
-            <li><a href="#" id="sign-up">Sign in</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="info-container">
-        <p>Ampel Health provides easy to integrate health experience surveys through a customizable platform with real-time insights that make sense to healthcare systems.</p>
-        <div class="btn btn-primary">start a free trial</div>
+<nav class="navbar navbar-default navbar-fixed-top" id="header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="assets/AmpelHealth_Logo_Header.jpeg">
+      </a>
     </div>
-</div>
+    <div class="menu">
+      <div id="nav-menu">Menu</div>
+      <ul class="menu-header-ul">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Schedule Demo</a></li>
+          <li><a href="#">Customer</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#signupModal">Start a free trial</a></li>
+          <li><a href="#">Sign in</a></li>
+      </ul>
+    </div>
+    <ul class="header-ul">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Schedule Demo</a></li>
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Testimonial</a></li>
+    </ul>
+    <ul class="header-ul header-signup">
+        <li><a href="#" id="start-trial" data-toggle="modal" data-target="#signupModal">Start a free trial</a></li>
+        <li><a href="#" id="sign-up">Sign in</a></li>
+    </ul>
+  </div>
+</nav>
+
+
 
 <%= yield %>
 
