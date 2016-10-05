@@ -20,7 +20,7 @@
 body{
     max-width: 1265px;
     margin: 0 auto;
-    min-width: 822px;
+    min-width: 767px;
 }
 
 .jumbotron{
@@ -159,6 +159,12 @@ ul.header-signup li {
 }
 
 
+.signup-info{
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+
 @media screen and (max-width:1150px) {
   .menu{
     display: block;
@@ -178,6 +184,10 @@ ul.header-signup li {
         top: 5px;
         font-size: 25px;
     }
+
+    // .menu li{
+    //     font-size: 15px;
+    // }
 
     .jumbotron.jumbotron-infographs {
         height: 1000px;

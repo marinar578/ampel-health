@@ -65,7 +65,7 @@
         </div>
         <div class="modal-body">
             <p>Please submit your email below for more information about our services.</p>
-            <form class="form-horizontal" role="form">
+            <!-- <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label  class="col-sm-2 control-label"
                           for="inputName">Name</label>
@@ -95,7 +95,27 @@
                   <button type="submit" class="btn btn-default">Submit</button>
                 </div>
               </div>
-            </form>
+            </form> -->
+            <%= form_for :signup, url: signups_path do |f| %>
+              <p>
+                <%= f.label :name %><br>
+                <%= f.text_field :name %>
+              </p>
+             
+              <p>
+                <%= f.label :email %><br>
+                <%= f.text_field :email %>
+              </p>
+             
+              <p>
+                <%= f.label :message %><br>
+                <%= f.text_field :message %>
+              </p>
+
+              <p>
+                <%= f.submit %>
+              </p>
+            <% end %>
         </div>
     </div>
 

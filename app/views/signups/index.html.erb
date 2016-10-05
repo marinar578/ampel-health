@@ -1,0 +1,12 @@
+<h1>Signups</h1>
+<a href="/cheeses/new">Add Signup</a>
+
+<ul>
+    <% @signups.each do |signup| %>
+        <div class="signup-info">
+            <p>Name: <%= signup.name%></p>
+            <p>Message: <%= signup.message%></p>
+            <p>Email: <%= signup.email%></p>
+        </div>
+    <% end %>
+</ul>
