@@ -96,24 +96,21 @@
                 </div>
               </div>
             </form> -->
-            <%= form_for :signup, url: signups_path do |f| %>
+            <%= bootstrap_form_for :signup, url: signups_path do |f| %>
               <p>
-                <%= f.label :name %><br>
                 <%= f.text_field :name %>
               </p>
              
               <p>
-                <%= f.label :email %><br>
                 <%= f.text_field :email %>
               </p>
              
               <p>
-                <%= f.label :message %><br>
                 <%= f.text_field :message %>
               </p>
 
               <p>
-                <%= f.submit %>
+                <%= f.submit "Submit"%>
               </p>
             <% end %>
         </div>
