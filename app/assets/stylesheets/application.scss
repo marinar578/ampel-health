@@ -23,6 +23,10 @@ body{
     min-width: 767px;
 }
 
+.navbar#header{
+    min-width: 767px;
+}
+
 .jumbotron{
     position: relative;
     height: 700px;
@@ -170,9 +174,9 @@ ul.header-signup li {
     display: block;
   }
 
-  ul.header-ul{
-    display: none;
-  }
+  // ul.header-ul{
+  //   display: none;
+  // }
 
 }
 
