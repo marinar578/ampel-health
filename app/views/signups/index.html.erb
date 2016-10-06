@@ -1,12 +1,20 @@
-<h1>Signups</h1>
-<a href="/cheeses/new">Add Signup</a>
+<div class="admin-view signups">
 
-<ul>
-    <% @signups.each do |signup| %>
-        <div class="signup-info">
-            <p>Name: <%= signup.name%></p>
-            <p>Message: <%= signup.message%></p>
-            <p>Email: <%= signup.email%></p>
-        </div>
-    <% end %>
-</ul>
+    <div class="padded"><a href="/users/new">Create a new admin user</a></div>
+    <div class="padded"><a href="users/<%=@current_user.id%>/edit">Change the password of this account</a></div>
+    <div class="padded"><a href="/users">View other admin accounts</a></div>
+    <div class="padded"><a href="logout">Logout</a></div>
+
+    <h2 class="padded">Signups</h2>
+
+    <ul>
+        <% @signups.each do |signup| %>
+            <div class="signup-info">
+                <p>Name: <%= signup.name%></p>
+                <p>Message: <%= signup.message%></p>
+                <p>Email: <%= signup.email%></p>
+                <p>Date: <%= signup.created_at %></p>
+            </div>
+        <% end %>
+    </ul>
+</div>

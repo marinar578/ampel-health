@@ -168,15 +168,20 @@ ul.header-signup li {
     border-bottom: 1px solid black;
 }
 
+.admin-view{
+    position: absolute;
+    top: 25%;
+}
+
+.padded{
+    padding: 10px;
+}
+
 
 @media screen and (max-width:1150px) {
   .menu{
     display: block;
   }
-
-  // ul.header-ul{
-  //   display: none;
-  // }
 
 }
 

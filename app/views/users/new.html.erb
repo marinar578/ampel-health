@@ -1,0 +1,17 @@
+<div class="admin-view new-admin-user">
+  <div class="padded"><a href="/admin">Back to admin page</a></div>
+    <h2>Create new admin account</h2>
+    <%= bootstrap_form_for :user, url: users_path do |f| %>
+      <p>
+        <%= f.text_field :email %>
+      </p>
+     
+      <p>
+        <%= f.text_field :password %>
+      </p>
+
+      <p>
+        <%= f.submit "Submit"%>
+      </p>
+    <% end %>
+</div>

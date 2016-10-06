@@ -1,0 +1,16 @@
+<div class="admin-view users">
+    <div class="padded"><a href="/admin">Back to admin page</a></div>
+    <div class="padded"><a href="/users/new">Create a new admin user</a></div>
+    <ul>
+        <% @users.each do |user| %>
+            <div class="signup-info">
+                <p>Email: <%= user.email%></p>
+                <p>Date: <%= user.created_at %></p>
+                <%if user.id != current_user.id%>
+                    <%= link_to 'Delete this admin account', user_path(user.id),
+                data: {:confirm => 'Are you sure?'}, :method => :delete %>
+                <%end%>
+            </div>
+        <% end %>
+    </ul>
+</div>

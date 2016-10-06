@@ -1,16 +1,42 @@
 class UsersController < ApplicationController
+  before_action :authorize
+  def index
+    @users = User.all
+  end
+
   def new
+  end
+
+  def edit
+      @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params["id"])
+ 
+    if @user.update(params["user"].permit(:email, :password))
+      redirect_to '/admin'
+    else
+      render 'edit'
+    end
   end
 
   def create
     user = User.new(user_params)
     if user.save
       session[:user_id] = user.id
-      redirect_to '/'
+      redirect_to '/admin'
     else
-      redirect_to '/signup'
+      redirect_to '/users/new'
     end
   end
+
+  def destroy
+      @user = User.find(params[:id])
+      @user.destroy
+     
+      redirect_to users_path
+    end
 
 private
 

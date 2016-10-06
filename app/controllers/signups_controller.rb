@@ -1,4 +1,7 @@
 class SignupsController < ApplicationController
+    # before_filter :authorize
+    before_action :authorize, only: [:show, :index, :destroy, :edit]
+
     def index
         @signups = Signup.all
     end
