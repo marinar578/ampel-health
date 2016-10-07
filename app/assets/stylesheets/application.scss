@@ -162,6 +162,33 @@ ul.header-signup li {
     color: grey;
 }
 
+.footer div.social-icons{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.footer div.social-icons .social-icon{
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.footer div.social-icons .social-icon#icon-facebook{
+    background-image: url(/assets/icon-facebook.png);
+}
+
+.footer div.social-icons .social-icon#icon-linkedin{
+    background-image: url(/assets/icon-linkedin.png);
+}
+
+.footer div.social-icons .social-icon#icon-mail{
+    background-image: url(/assets/icon-mail.png);
+}
+
 
 .signup-info{
     padding: 15px;
@@ -216,12 +243,19 @@ ul.header-signup li {
         font-size: 45px;
     }
 
-    .infograph p{
+    .jumbotron-infographs .infograph p#first-p {
+        top: 40%;
+    }
+
+    .jumbotron-infographs .infograph p{
         display: inline;
         float: right;
         width: 50%;
-        position: relative;
-        bottom: 25%;
+        // position: relative;
+        // bottom: 25%;
+        position: absolute;
+        top: 22%;
+        right: 0%;
         text-align: left;
         font-size: 30px;
     }
